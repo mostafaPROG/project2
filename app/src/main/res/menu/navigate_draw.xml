@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:id="@+id/tools_drw" android:title="@string/tools_draw" android:checkableBehavior="single" android:icon="@drawable/ic_apps_black_24dp"/>-->
+    <item android:id="@+id/aboutUs"
+          android:title="@string/na_aboutUs" android:icon="@drawable/ic_info_outline_black_24dp"/>
+    <item android:id="@+id/setting" android:title="@string/nav_setting" android:icon="@drawable/ic_settings_black_24dp"/>
+</menu>

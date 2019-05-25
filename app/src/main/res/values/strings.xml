@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kohnavardi</string>
+
+    <string name="nav_setting">تنظیمات</string>
+    <string name="na_aboutUs">درباره ما</string>
+    <string name="tools_draw">ابزار ها</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

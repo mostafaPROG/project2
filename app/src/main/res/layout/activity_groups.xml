@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.GroupsActivity">
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:ms_padding_right="20dp"
+            app:ms_padding_left="20dp"
+            app:ms_background_color="@color/colorYellowBright"
+            app:ms_text_color="@color/colorPrimaryDark"
+            android:id="@+id/spinnerOstan" app:layout_constraintTop_toTopOf="@+id/spinnerCity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/spinnerCity" android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerCity" app:layout_constraintHorizontal_weight="3"
+            app:layout_constraintHorizontal_bias="0.5" android:layout_marginEnd="8dp"/>
+    <com.jaredrummler.materialspinner.MaterialSpinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerCity"
+            app:ms_padding_right="20dp"
+            app:ms_padding_left="20dp"
+            app:ms_text_color="@color/colorPrimaryDark"
+            app:ms_background_color="@color/colorYellowBright"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/spinnerOstan"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginStart="8dp"/>
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:layout_marginLeft="16dp"
+                       android:id="@+id/backGroup"
+                       android:layout_marginRight="8dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:fontFamily="@font/yekan"
+                      android:textColor="@color/colorYellowBright"
+                      android:textSize="24sp"
+                      android:layout_gravity="center"
+                      android:text="گروه های کوهنوردی"/>
+
+    </androidx.appcompat.widget.Toolbar>
+</androidx.constraintlayout.widget.ConstraintLayout>

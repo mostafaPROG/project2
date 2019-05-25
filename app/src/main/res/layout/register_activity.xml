@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:id="@+id/coordinatorLayout">
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:visibility="visible">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:toolbarId="@id/registerToolbar"
+                app:layout_scrollFlags="scroll|enterAlways|exitUntilCollapsed"
+                app:contentScrim="?attr/colorPrimary">
+            <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:theme="?attr/actionBarTheme"
+                    android:minHeight="?attr/actionBarSize"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                    android:id="@+id/registerToolbar" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                    app:titleTextAppearance="@style/textAppearanceCollapsed">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="ثبت نام"
+                          android:textAppearance="@style/textAppearanceCollapsed"
+                          android:layout_marginRight="16dp"
+                          android:layout_gravity="right"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/nestedScrollView">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/constraintLayout3">
+
+            <Button
+                    android:text="ثبت نام"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:id="@+id/button5"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout9"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout9"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout9"
+                    android:background="@drawable/background_strok" android:textColor="@color/backgroundWhite"
+                    android:layout_marginTop="16dp" app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@+id/textInputLayout3"
+                    app:layout_constraintHorizontal_weight="1" app:layout_constraintTop_toTopOf="@+id/textInputLayout3"
+                    app:layout_constraintBottom_toBottomOf="@+id/textInputLayout3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp" android:id="@+id/textInputLayout4"
+                    app:layout_constraintHorizontal_bias="0.5" android:layout_marginEnd="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="نام پدر" android:textColorHint="@color/gray"
+                        style="@style/textAppearanceCollapsed"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInputLayout" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_weight="1" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="نام" android:textColorHint="@color/gray" style="@style/textAppearanceCollapsed"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@+id/textInputLayout"
+                    android:layout_marginEnd="16dp" app:layout_constraintTop_toTopOf="@+id/textInputLayout"
+                    app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp" android:id="@+id/textInputLayout2"
+                    app:layout_constraintHorizontal_bias="0.5" app:layout_constraintHorizontal_weight="2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="نام خانوادگی" android:textColorHint="@color/gray"
+                        style="@style/textAppearanceCollapsed"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup" app:layout_constraintHorizontal_weight="2"
+                    android:id="@+id/textInputLayout3" app:layout_constraintStart_toEndOf="@+id/textInputLayout4"
+                    app:layout_constraintHorizontal_bias="0.5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="کد ملی" android:textColorHint="@color/gray"
+                        style="@style/textAppearanceCollapsed"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+                    android:orientation="horizontal" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" android:id="@+id/radioGroup"
+                    app:layout_constraintHorizontal_bias="1.0" android:layout_marginEnd="16dp">
+                <RadioButton
+                        android:text="زن"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/radioButton" android:layout_weight="2"
+                        android:layout_marginRight="40dp"/>
+                <RadioButton
+                        android:text="مرد"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/radioButton2" android:layout_weight="2"
+                />
+
+            </RadioGroup>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintHorizontal_weight="3" android:id="@+id/textInputLayout5"
+                    app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/button4"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/birthday"
+                        android:editable="false"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="تاریخ تولد" android:textColorHint="@color/gray"
+                        style="@style/textAppearanceCollapsed"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/button4" app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+                    app:layout_constraintStart_toEndOf="@+id/textInputLayout5"
+                    android:layout_marginStart="8dp" app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintTop_toTopOf="@+id/textInputLayout5"
+                    app:layout_constraintBottom_toBottomOf="@+id/textInputLayout5"
+                    app:srcCompat="@drawable/calendar" app:layout_constraintVertical_bias="0.75"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout3" android:layout_marginEnd="8dp"
+                    android:id="@+id/textInputLayout6">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="شماره همراه" android:textColorHint="@color/gray"
+                        style="@style/textAppearanceCollapsed"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout6" app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+                    android:layout_marginStart="8dp" android:id="@+id/textInputLayout7">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="شماره بیمه ورزشی" android:textColorHint="@color/gray"
+                        style="@style/textAppearanceCollapsed"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout5" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" android:id="@+id/textInputLayout8"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView8" android:layout_marginEnd="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="تاریخ بیمه ورزشی" android:textColorHint="@color/gray"
+                        style="@style/textAppearanceCollapsed"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" app:srcCompat="@drawable/calendar"
+                    android:id="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="@+id/textInputLayout8"
+                    app:layout_constraintBottom_toBottomOf="@+id/textInputLayout8" android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout7"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout7"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout7" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" android:id="@+id/textInputLayout9">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="نام و نام خانوادگی معرف" android:textColorHint="@color/gray"
+                        style="@style/textAppearanceCollapsed"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

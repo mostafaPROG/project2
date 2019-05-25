@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+                                                   android:layoutDirection="rtl"
+                                                   app:layout_constraintCircleRadius="20dp"
+              android:layout_height="160dp">
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:alpha="0.8"
+            app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/p4" android:background="#00B61212"
+            android:foreground="#A1000000"/>
+    <ImageView android:layout_width="60dp" android:layout_height="60dp"
+               android:src="@drawable/def_prof"
+               app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+               android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+               android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+               app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.904"
+               android:id="@+id/imageView"/>
+    <TextView
+            android:text="Mostafa Ghorbanzadeh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="@color/backgroundWhite"
+            android:fontFamily="@font/iransansweb_medium"
+            app:layout_constraintStart_toEndOf="@+id/imageView" android:layout_marginStart="12dp"
+            android:layout_marginBottom="4dp" app:layout_constraintBottom_toTopOf="@+id/textView2"/>
+    <TextView
+            android:text="+989152442925"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/backgroundWhite"
+            android:fontFamily="@font/iransansweb_medium"
+            android:id="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:textDirection="ltr"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
